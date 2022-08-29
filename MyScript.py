@@ -154,8 +154,24 @@ print(x >> 2)
 
 # ================================================================================= #
 
-# Bitwise left shift
+# Bitwise left shift (Binary)
 x = 5
 print(x << 3)
 
 # x = 00000101 -> 00101000 = 40
+
+# ================================================================================= #
+
+# Basic if-elif-else statements
+mark = 80
+
+if mark >= 75:
+    print("Grade is A")
+elif mark >= 65:
+    print("Grade is B")
+elif mark >= 55:
+    print("Grade is C")
+elif mark >= 35:
+    print("Grade is S")
+else:
+    print("Fail")
