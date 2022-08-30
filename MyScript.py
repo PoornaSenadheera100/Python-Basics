@@ -175,3 +175,145 @@ elif mark >= 35:
     print("Grade is S")
 else:
     print("Fail")
+
+# ================================================================================= #
+
+# Star pattern
+val = int(input())
+for y in range(0, val):
+    for x in range (0, val):
+        print('*',end='')
+    print("")
+
+# if val = 4
+# ****
+# ****
+# ****
+# ****
+
+# ================================================================================= #
+
+# Check whether a number is prime or not
+i = int(input())
+j = 2
+while (j <= (i/j)):
+    if not(i%j):
+        print("Not a prime")
+        break
+    j = j + 1
+if (j > i/j):
+    print("Prime")
+
+# ================================================================================= #
+
+# Lists
+my_list = [1, 2, 100.9, "Poorna"]
+print(my_list)
+print(my_list[2])
+print(my_list[1:])
+print(my_list[0:3])
+
+my_list.append(30)
+print(my_list)
+
+my_list[2] = 101.7
+print(my_list)
+
+my_list.remove(2)
+print(my_list)
+
+del my_list[1]
+print(my_list)
+
+# ================================================================================= #
+
+# 2D Lists
+list2D = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+print(list2D)
+print(list2D[2][0],list2D[0][1])
+
+list2D[1].append(6.1)
+print(list2D)
+
+print(len(my_list))
+
+new_list = ['Hi']
+old_list = ['Bye']
+print(new_list*4)
+print(new_list+old_list)
+
+# ================================================================================= #
+
+# List Operations
+fruits = ['Mango', 'Banana', 'Apple']
+print('Orange' in fruits)
+print('Banana' in fruits)
+
+for fruit in fruits:
+    print(fruit)
+
+print(fruits[-2])
+
+#    0          1        2
+# ['Mango', 'Banana', 'Apple']
+#   -3         -2       -1
+
+# ================================================================================= #
+
+# Get even numbers
+numlist = [2, 4, 6, 8, 3, 4, 2, 1]
+evenlist = []
+
+for num in numlist:
+    if num % 2 == 0 and num not in evenlist:
+        evenlist.append(num)
+
+print(evenlist)
+
+# ================================================================================= #
+
+# Loops
+for count in [1, 2, 3, 4, 5]:
+    print(count)
+
+for count in range(1,6):
+    print(count)
+
+for count in range(6):
+    print(count)
+
+for even in range(0, 11, 2):
+    print(even)
+
+
+num = 5
+while num > 2:
+    print(num)
+    num-=1
+
+# ================================================================================= #
+
+# Nested Loops
+
+for i in range(4):
+    for j in range(4):
+        print('*',end='')
+    print('')
+
+# ================================================================================= #
+
+# break, continue and pass statements
+for i in range(5):
+    if i == 2:
+        break
+    print(i)
+
+for i in range(5):
+    if i == 2:
+        continue
+    print(i)
+
+for i in range(5):
+    if i == 2:
+        pass        # To avoid the syntax errors (if we have not implemented this part yet)
+    print(i)
