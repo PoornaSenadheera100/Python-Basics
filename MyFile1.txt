@@ -1,0 +1,3 @@
+Hello World.
+Python is a high level programming language.
+Learn and apply...
