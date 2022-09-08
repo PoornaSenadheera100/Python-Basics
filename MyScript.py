@@ -360,7 +360,7 @@ print("b is {1} and a is {0}".format(a,b))
 
 # Functions
 
-from math import pi
+from math import pi, sqrt
 
 
 x = min(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
@@ -431,3 +431,42 @@ fileHandler3.write("This file was created by another process.\n")
 
 name = "Poorna"
 fileHandler3.write("My name is " + name + ".")
+
+# ================================================================================= #
+
+# Strings
+a = "Hello"
+print(a[1])
+print(a[1:4])
+print(a[2:])
+print(a[:4])
+print(a[-1])
+print(a[-4:-1])
+print(a[-3:])
+print(a[:-1])
+
+print(len(a))
+
+b = "Price is "
+p = str(float(100))
+print(b+p)
+
+print(a*4)
+
+print('e' in a)
+print('E' in a)
+print('h' not in a)
+
+# ================================================================================= #
+
+# Using Python Libraries
+
+from math import sqrt
+num = 10
+print(sqrt(num))
+
+# or
+
+import math
+num = 10
+print(math.sqrt(num))
