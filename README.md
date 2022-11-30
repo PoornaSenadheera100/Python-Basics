@@ -1,5 +1,5 @@
 # Python-Basics
-http://test.com
+
 ## Content
 - Print
 - Expressions
